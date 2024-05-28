@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metroplan Emergencial</title>
+    <link rel="icon" href="images/metroplan-title-image.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .nav {
+            margin-top: .8rem;;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            width: 100%;             
+        }
+        .front-banner {
+            padding-left: 24px;
+        }
+        .front-banner img {
+            max-width: 60%;   
+        }
+        .main-title {
+            padding-right: 24px;
+        }
+        .main-title h4 {
+            color: #00619f;
+        }
+        .father-main-content {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        
+        }
+        .main-content {
+            border: 0px solid #e0e0e0; 
+            padding: 1rem; 
+            background-color: white; 
+            border-radius: 0.25rem; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            margin-bottom: 3rem; 
+        }
+        .main-content label {
+            font-size: 1.1rem;
+            color: #00619f;
+            margin-bottom: 0.5rem;
+            
+        }
+        .main-content select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        hr {
+            border: none;               
+            border-top: 1px solid #ccc; 
+            margin: 20px 0;             
+            opacity: 0.5; 
+        }
+        .footer-content {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        footer small {
+            font-size: 0.8rem;
+            color: #00619f;
+            padding-left: 24px;
+        }
+        @media (min-width: 768px) {
+            .main-content {
+                margin-top: 2rem;
+                padding: 1.5rem;
+                width: 30rem;
+                height: 11rem;
+            }
+            .main-title h4 {
+                font-size: 1.5rem;
+            }            
+        }
+        @media (min-width: 850px) {
+            .main-title h4 {
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="front-banner">
+            <img src="images/metroplan-banner-image.jpg" alt="Metroplan Banner">
+        </div>
+        <div class="main-title">
+            <h4>Itinerário Emergencial</h4>
+        </div>
+    </div>
+    <br>
+
+    <div class="father-main-content">
+        <div class="main-content">
+            <label for="">Serviço:</label>
+            <select name="" id="">
+                <option value="" disabled selected>Serviço</option>
+                <option value="">Metropolitano</option>
+                <option value="">N/Metropolitano</option>
+            </select>
+            <label for="">Linha:</label>
+            <select name="" id="">
+                <option value="" disabled selected>Linha</option>
+                <option value="">470</option>
+                <option value="">471</option>
+                <option value="">473</option>
+            </select>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-father">
+            <div class="footer-content">
+                <hr>
+                <small>&copy; Metroplan</small>
+                <br>
+                <small>Todos os direitos reservados</small>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
